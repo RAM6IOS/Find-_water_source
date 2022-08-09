@@ -66,14 +66,17 @@ struct ContentView: View {
                         showingSheet.toggle()
                         
                     } label: {
-                        Image(systemName: "plus")
+                        Image("list")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 50, height: 50 )
+                            .background(.black.opacity(0.75))
+                            .foregroundColor(.white)
+                            .font(.title)
+                            .clipShape(Circle())
+                            .padding(.trailing)
                     }
-                    .padding()
-                    .background(.black.opacity(0.75))
-                    .foregroundColor(.white)
-                    .font(.title)
-                    .clipShape(Circle())
-                    .padding(.trailing)
+                    
                 }
                 Spacer()
                 HStack {
