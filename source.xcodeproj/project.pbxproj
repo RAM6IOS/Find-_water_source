@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D00D49328999664008AD79C /* AddForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D00D49228999664008AD79C /* AddForm.swift */; };
+		2D0AC2342807312A00B4A9C9 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0AC2332807312A00B4A9C9 /* PhotoPicker.swift */; };
+		2D22810A28085BC50009346B /* LocationMangerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D22810928085BC50009346B /* LocationMangerModel.swift */; };
+		2D348601282FAA090023075A /* Locationworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D3485FF282FAA090023075A /* Locationworm.xcdatamodeld */; };
+		2D348603282FAC9F0023075A /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D348602282FAC9F0023075A /* DataController.swift */; };
+		2D4C801F2805CE5000C45FD2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C801E2805CE5000C45FD2 /* Location.swift */; };
+		2D563A63286E375C004644A4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D563A62286E375C004644A4 /* DetailView.swift */; };
 		2D8DD5982801F9340025DC58 /* sourceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8DD5972801F9340025DC58 /* sourceApp.swift */; };
 		2D8DD59A2801F9340025DC58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8DD5992801F9340025DC58 /* ContentView.swift */; };
 		2D8DD59C2801F9390025DC58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D8DD59B2801F9390025DC58 /* Assets.xcassets */; };
@@ -14,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D00D49228999664008AD79C /* AddForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddForm.swift; sourceTree = "<group>"; };
+		2D0AC2332807312A00B4A9C9 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		2D22810928085BC50009346B /* LocationMangerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMangerModel.swift; sourceTree = "<group>"; };
+		2D348600282FAA090023075A /* Locationworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Locationworm.xcdatamodel; sourceTree = "<group>"; };
+		2D348602282FAC9F0023075A /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		2D4C801E2805CE5000C45FD2 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		2D563A62286E375C004644A4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		2D8DD5942801F9340025DC58 /* source.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = source.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8DD5972801F9340025DC58 /* sourceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sourceApp.swift; sourceTree = "<group>"; };
 		2D8DD5992801F9340025DC58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,8 +65,10 @@
 		2D8DD5962801F9340025DC58 /* source */ = {
 			isa = PBXGroup;
 			children = (
-				2D8DD5972801F9340025DC58 /* sourceApp.swift */,
-				2D8DD5992801F9340025DC58 /* ContentView.swift */,
+				2DC8A2C928A29DA900AA8AAB /* Model */,
+				2DC8A2C828A29D9700AA8AAB /* ViewModel */,
+				2DC8A2C728A29D8300AA8AAB /* App */,
+				2DC8A2C628A29D7000AA8AAB /* View */,
 				2D8DD59B2801F9390025DC58 /* Assets.xcassets */,
 				2D8DD59D2801F9390025DC58 /* Preview Content */,
 			);
@@ -65,6 +81,43 @@
 				2D8DD59E2801F9390025DC58 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2DC8A2C628A29D7000AA8AAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D00D49228999664008AD79C /* AddForm.swift */,
+				2D563A62286E375C004644A4 /* DetailView.swift */,
+				2D8DD5992801F9340025DC58 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2DC8A2C728A29D8300AA8AAB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2D8DD5972801F9340025DC58 /* sourceApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2DC8A2C828A29D9700AA8AAB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2D4C801E2805CE5000C45FD2 /* Location.swift */,
+				2D3485FF282FAA090023075A /* Locationworm.xcdatamodeld */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2DC8A2C928A29DA900AA8AAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D22810928085BC50009346B /* LocationMangerModel.swift */,
+				2D348602282FAC9F0023075A /* DataController.swift */,
+				2D0AC2332807312A00B4A9C9 /* PhotoPicker.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D348603282FAC9F0023075A /* DataController.swift in Sources */,
+				2D563A63286E375C004644A4 /* DetailView.swift in Sources */,
+				2D22810A28085BC50009346B /* LocationMangerModel.swift in Sources */,
+				2D0AC2342807312A00B4A9C9 /* PhotoPicker.swift in Sources */,
 				2D8DD59A2801F9340025DC58 /* ContentView.swift in Sources */,
+				2D4C801F2805CE5000C45FD2 /* Location.swift in Sources */,
 				2D8DD5982801F9340025DC58 /* sourceApp.swift in Sources */,
+				2D348601282FAA090023075A /* Locationworm.xcdatamodeld in Sources */,
+				2D00D49328999664008AD79C /* AddForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,11 +332,13 @@
 				DEVELOPMENT_TEAM = 2H8H3AS73K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needa your Location for show in on the map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,11 +363,13 @@
 				DEVELOPMENT_TEAM = 2H8H3AS73K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needa your Location for show in on the map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +405,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2D3485FF282FAA090023075A /* Locationworm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2D348600282FAA090023075A /* Locationworm.xcdatamodel */,
+			);
+			currentVersion = 2D348600282FAA090023075A /* Locationworm.xcdatamodel */;
+			path = Locationworm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2D8DD58C2801F9340025DC58 /* Project object */;
 }
