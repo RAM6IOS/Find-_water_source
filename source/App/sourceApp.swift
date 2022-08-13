@@ -12,7 +12,7 @@ struct sourceApp: App {
     @StateObject private var dataController = DataController()
     var body: some Scene {
         WindowGroup {
-            ContentView( book: Locationse())
+            HomeView(book: Locationse())
                 .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
