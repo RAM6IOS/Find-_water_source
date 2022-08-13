@@ -18,6 +18,8 @@
 		2D8DD59A2801F9340025DC58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8DD5992801F9340025DC58 /* ContentView.swift */; };
 		2D8DD59C2801F9390025DC58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D8DD59B2801F9390025DC58 /* Assets.xcassets */; };
 		2D8DD59F2801F9390025DC58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D8DD59E2801F9390025DC58 /* Preview Assets.xcassets */; };
+		2DF46C3E28A814E500158D13 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF46C3D28A814E500158D13 /* HomeView.swift */; };
+		2DF46C4028A8174800158D13 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF46C3F28A8174800158D13 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		2D8DD5992801F9340025DC58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2D8DD59B2801F9390025DC58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D8DD59E2801F9390025DC58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2DF46C3D28A814E500158D13 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2DF46C3F28A8174800158D13 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 				2D00D49228999664008AD79C /* AddForm.swift */,
 				2D563A62286E375C004644A4 /* DetailView.swift */,
 				2D8DD5992801F9340025DC58 /* ContentView.swift */,
+				2DF46C3D28A814E500158D13 /* HomeView.swift */,
+				2DF46C3F28A8174800158D13 /* ProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,11 +199,13 @@
 				2D348603282FAC9F0023075A /* DataController.swift in Sources */,
 				2D563A63286E375C004644A4 /* DetailView.swift in Sources */,
 				2D22810A28085BC50009346B /* LocationMangerModel.swift in Sources */,
+				2DF46C3E28A814E500158D13 /* HomeView.swift in Sources */,
 				2D0AC2342807312A00B4A9C9 /* PhotoPicker.swift in Sources */,
 				2D8DD59A2801F9340025DC58 /* ContentView.swift in Sources */,
 				2D4C801F2805CE5000C45FD2 /* Location.swift in Sources */,
 				2D8DD5982801F9340025DC58 /* sourceApp.swift in Sources */,
 				2D348601282FAA090023075A /* Locationworm.xcdatamodeld in Sources */,
+				2DF46C4028A8174800158D13 /* ProfileView.swift in Sources */,
 				2D00D49328999664008AD79C /* AddForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
