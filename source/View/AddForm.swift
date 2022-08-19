@@ -40,19 +40,13 @@ struct AddForm: View {
                             .frame(width: 200, height: 100 )
                             .clipShape(Circle())
                     } else{
-                        ZStack{
-                Image("default-avatar")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 200, height: 100 )
-                    .clipShape(Circle())
-                Image(systemName: "square.and.pencil")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 17, height: 17)
-                    .foregroundColor(.black)
-                    .offset(y:40)
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10)
+                                .strokeBorder(lineWidth: 3)
+                            Image(systemName: "camera")
+                                .font(.largeTitle)
                         }
+                        .frame(height: 200)
                     }
                     
                 }
