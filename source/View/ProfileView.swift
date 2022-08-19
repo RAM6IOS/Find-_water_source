@@ -9,7 +9,68 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            VStack{
+                ZStack{
+                    Image("default-avatar")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 200, height: 100 )
+                        .clipShape(Circle())
+                   
+                    Image(systemName: "square.and.pencil")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 17, height: 17)
+                        .foregroundColor(.black)
+                        .offset(y:40)
+                }
+                List{
+                    Section{
+                    Text("name")
+                    Text("Email")
+                    }
+                }
+                VStack{
+                    Button{
+                        
+                    } label: {
+                        Text("Edit")
+                            .bold()
+                            .font(.title3)
+                            .frame(width: 250, height: 40)
+                            .foregroundColor(.white)
+                    }
+                    .background(Color.red)
+                    .cornerRadius(10)
+                    Button{
+                        
+                    } label: {
+                        Text("Logout")
+                            .bold()
+                            .font(.title3)
+                            .frame(width: 250, height: 40)
+                            .foregroundColor(.white)
+                    }
+                    .background(Color.red)
+                    .cornerRadius(10)
+                    Button{
+                        
+                    } label: {
+                        Text("Delete Account")
+                            .bold()
+                            .font(.title3)
+                            .frame(width: 250, height: 40)
+                            .foregroundColor(.white)
+                    }
+                    .background(Color.red)
+                    .cornerRadius(10)
+                    
+                }
+                
+            }
+            
+        }
     }
 }
 
