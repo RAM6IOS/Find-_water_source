@@ -41,7 +41,7 @@ struct ProfileView: View {
                             .frame(width: 250, height: 40)
                             .foregroundColor(.white)
                     }
-                    .background(Color.red)
+                    .background(Color.theme.twilightWhite)
                     .cornerRadius(10)
                     Button{
                         
@@ -52,7 +52,7 @@ struct ProfileView: View {
                             .frame(width: 250, height: 40)
                             .foregroundColor(.white)
                     }
-                    .background(Color.red)
+                    .background(Color.theme.accentcolor)
                     .cornerRadius(10)
                     Button{
                         
@@ -61,9 +61,9 @@ struct ProfileView: View {
                             .bold()
                             .font(.title3)
                             .frame(width: 250, height: 40)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                     }
-                    .background(Color.red)
+                    .border(Color.theme.twilightWhite, width: 2)
                     .cornerRadius(10)
                     
                 }
