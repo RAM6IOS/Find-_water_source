@@ -3,14 +3,11 @@
 //  source
 //
 //  Created by Bouchedoub Rmazi on 9/4/2022.
-//
-
 import SwiftUI
 import CoreData
 import MapKit
 import CoreLocation
 import CoreLocationUI
-
 struct ContentView: View {
     @FetchRequest(sortDescriptors: [
         SortDescriptor(\.latitude)
@@ -26,7 +23,6 @@ struct ContentView: View {
             Map(coordinateRegion: $viewModel.region ,showsUserLocation: true ,annotationItems: locatons) {location in
                 MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)){
                     VStack{
-                       
                         if let photoData = location.photoData, let uiImage = UIImage(data: photoData) {
                             Image(uiImage: uiImage)
                                .resizable()
@@ -47,49 +43,22 @@ struct ContentView: View {
                         }
                         Text(location.name ?? "nameLocation")
                         }
-                
                 }
-
             }
-            
             .ignoresSafeArea()
             .accentColor(Color(.systemPink))
             Circle()
                     .fill(.red)
                     .opacity(0.3)
                     .frame(width: 32, height: 32)
-            
             VStack {
-                HStack{
-                    Spacer()
-                    Button {
-                        showingSheet.toggle()
-                        
-                    } label: {
-                        Image("list")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 50, height: 50 )
-                            .background(.black.opacity(0.75))
-                            .foregroundColor(.white)
-                            .font(.title)
-                            .clipShape(Circle())
-                            .padding(.trailing)
-                    }
-                    
-                }
                 Spacer()
                 HStack {
                     Spacer()
                     VStack{
                     Button {
-                        
                         try? moc.save()
-                        
-                        
                         showingForm.toggle()
-                        //dismiss()
-                        
                     } label: {
                         Image(systemName: "plus")
                     }
@@ -118,15 +87,9 @@ struct ContentView: View {
             DetailView()
         }
     }
-
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView( book: Locationse())
     }
 }
-
-
-
-
