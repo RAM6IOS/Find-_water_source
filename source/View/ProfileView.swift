@@ -38,33 +38,38 @@ struct ProfileView: View {
                         Text("Edit")
                             .bold()
                             .font(.title3)
-                            .frame(width: 250, height: 40)
-                            .foregroundColor(.white)
+                            .foregroundColor(Color.white)
+                            .frame(width: 350, height: 45)
+                            
                     }
                     .background(Color.theme.twilightWhite)
-                    .cornerRadius(10)
+                    .cornerRadius(30)
                     Button{
                         
                     } label: {
                         Text("Logout")
                             .bold()
                             .font(.title3)
-                            .frame(width: 250, height: 40)
                             .foregroundColor(.white)
+                            .frame(width: 350, height: 45)
                     }
                     .background(Color.theme.accentcolor)
-                    .cornerRadius(10)
-                    Button{
-                        
-                    } label: {
-                        Text("Delete Account")
-                            .bold()
-                            .font(.title3)
-                            .frame(width: 250, height: 40)
-                            .foregroundColor(.black)
+                    .cornerRadius(30)
+                    ZStack{
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 30 )
+                                .strokeBorder( .blue,lineWidth: 3)
+                            Button{
+                                
+                            } label: {
+                                Text("Eidet")
+                            }
+                        }
+                        .frame(width: 350, height: 45)
+                        .padding(.horizontal,10)
                     }
-                    .border(Color.theme.twilightWhite, width: 2)
-                    .cornerRadius(10)
+                   
+                  
                     
                 }
                 
