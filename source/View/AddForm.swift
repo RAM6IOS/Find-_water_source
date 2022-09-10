@@ -1,14 +1,10 @@
-//
+
 //  AddForm.swift
 //  source
-//
 //  Created by Bouchedoub Rmazi on 2/8/2022.
-//
-
 import SwiftUI
 import CoreLocation
 import CoreLocationUI
-
 struct AddForm: View {
     let book : Locationse
     let formatter: NumberFormatter = {
@@ -28,7 +24,6 @@ struct AddForm: View {
     var body: some View {
         NavigationView{
         VStack{
-            
                 Button{
                     shouldPresentPhotoPicker.toggle()
                 } label: {
@@ -37,8 +32,10 @@ struct AddForm: View {
                         Image(uiImage: image)
                             .resizable()
                             .scaledToFill()
-                            .frame(width: 200, height: 100 )
-                            .clipShape(Circle())
+                            .frame( height: 200 )
+                            .clipShape(Rectangle())
+                            .cornerRadius(10)
+                            .padding(.horizontal,10)
                     } else{
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
@@ -47,26 +44,30 @@ struct AddForm: View {
                                 .font(.largeTitle)
                         }
                         .frame(height: 200)
+                        .padding(.horizontal,10)
                     }
-                    
                 }
                 .fullScreenCover(isPresented: $shouldPresentPhotoPicker) {
                     PhotoPickerView(photoData: $photoData)
                 }
-            
             Form{
                 Section{
                 TextField("name",text: $name)
                 }
-                LocationButton(.currentLocation){
-                        withAnimation{
-                            viewModel.requesAllowOnceLocationPermission()
-                            shownLocation.toggle()
-                        }
+                Button{
+                    withAnimation{
+                    viewModel.requesAllowOnceLocationPermission()
+                    shownLocation.toggle()
+                    }
+                } label: {
+                    withAnimation{
+                    HStack{
+                    Text("Location")
+                        Spacer()
+                        Image(systemName: shownLocation ? "arrowtriangle.up.fill" : "arrowtriangle.down.fill")
+                    }
+                    }
                 }
-                        .foregroundColor(.white)
-                        .font(.title)
-                        .frame( height: 50)
                 if shownLocation == true{
                 Section( footer: Text("Location Coordinates Can be Changed Manually")){
                     TextField("longitude" , value: $viewModel.region.center.latitude, formatter: formatter)
@@ -74,7 +75,6 @@ struct AddForm: View {
                 }
                 }
                 }
-                
             Button{
                 let newBook = Locationse(context: moc)
                 newBook.id = UUID()
@@ -89,17 +89,12 @@ struct AddForm: View {
             } label: {
                 Text("Save")
                     .foregroundColor(Color.black)
-                    .frame(width: 200, height: 50)
-                    .background(.green)
-                    .padding()
-                    .cornerRadius(20)
+                    .frame(width: 350, height: 50)
+                    .background(Color.theme.accentcolor)
                     
             }
+            .cornerRadius(30)
             }
-            
-            
         }
         }
     }
-
-
