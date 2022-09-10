@@ -1,12 +1,9 @@
 //
 //  ProfileView.swift
 //  source
-//
 //  Created by Bouchedoub Rmazi on 13/8/2022.
 //
-
 import SwiftUI
-
 struct ProfileView: View {
     var body: some View {
         NavigationView{
@@ -33,14 +30,13 @@ struct ProfileView: View {
                 }
                 VStack{
                     Button{
-                        
                     } label: {
                         Text("Edit")
                             .bold()
                             .font(.title3)
                             .foregroundColor(Color.white)
                             .frame(width: 350, height: 45)
-                            
+
                     }
                     .background(Color.theme.twilightWhite)
                     .cornerRadius(30)
@@ -68,17 +64,11 @@ struct ProfileView: View {
                         .frame(width: 350, height: 45)
                         .padding(.horizontal,10)
                     }
-                   
-                  
-                    
                 }
-                
             }
-            
         }
     }
 }
-
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()
